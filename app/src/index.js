@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 // simpler components don't need full classes, we can make functional components instead.
-
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -11,23 +10,6 @@ function Square(props) {
     </button>
   )
 }
-
-// class Square extends React.Component {
-//   constructor() {
-//       super();
-//       this.state = {
-//         value: null,
-//       };
-//   }
-//
-//   render() {
-//     return (
-//       <button className="square" onClick={() => this.props.onClick()}>
-//         {this.props.value}
-//       </button>
-//     );
-//   }
-// }
 
 class Board extends React.Component {
   renderSquare(i) {
